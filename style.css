@@ -1,13 +1,26 @@
+:root {
+  --ink: #24372d;
+  --green: #2c6e50;
+  --dark: #174b38;
+  --mint: #e8f3df;
+  --cream: #f7f7ee;
+  --line: #d6e1d1;
+  --orange: #d77939;
+  --white: #fff;
+}
+
+
 body{
     max-width: 1000px;
     margin: auto;
+    font-family: "Segoe UI";
 }
 
 img {
     width: 3%;
 }
 
-nav {
+.elsonav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,26 +47,51 @@ nav {
     font-size: 14px;
   }
 
-  nav ul {
+  .elsonav ul {
     display: flex;
     gap: 6px;
     list-style: none;
   }
 
-  nav a { 
+  .elsonav a { 
     padding: 8px 14px;
     border-radius: 999px;
-    color: #1f3b2d;
+    color: var(--dark);
     font-size: 13px;
     font-weight: 600;
     text-decoration: none;
   }
 
-  nav a:hover {
+  .elsonav a:hover {
     background: #ece8d8;
   }
 
-  nav a.aktiv {
+  .elsonav a.aktiv {
     background: #1f4a37;
     color: #fff;
   }
+
+
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 32px;
+    background: var(--dark);
+    border-radius: 20px;
+  }
+.feher{
+    color: white;
+}
+
+.zoldes{
+    color: #cfe8b0;
+}
+
+#headeraside {
+  background-color: var(--green);
+  border-radius: 20px;
+  padding: 5px;
+  border: #cfe8b0 solid 2px ;
+}
